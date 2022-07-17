@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'MYHaemalgeunSangsang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYHaemalgeunSangsang.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MYYeongnamnu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JSongMyung-Regular-KO';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   outline: 0;
   margin: 0;
@@ -7,15 +28,56 @@
 html {
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
+  font-family: 'MYHaemalgeunSangsang';
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #ffc1c2;
 }
 
 canvas {
   width: 100%;
   height: 100%;
+}
+
+span {
+  width: 560px;
+  height: 280px;
+  margin: 350px auto;
+  display: flex;
+  gap: 3rem;
+}
+
+h1 {
+  width: 280px;
+  height: 280px;
+  font-size: 6rem;
+  color: rgba(255, 255, 255, 0);
+  animation: asdf 2s ease-out;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+h2 {
+  color: white;
+  font-family: 'JSongMyung-Regular-KO';
+  font-size: 1.8rem;
+}
+
+@keyframes asdf {
+  form {
+    color: rgba(255, 255, 255, 0.1);
+  }
+
+  to {
+    color: rgba(255, 255, 255, 0.8);
+  }
 }

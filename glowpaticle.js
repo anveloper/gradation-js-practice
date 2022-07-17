@@ -8,7 +8,7 @@ export class GlowParticle {
     this.rgb = rgb;
 
     this.vx = Math.random() * 4;
-    this.vy = Math.random() * 8;
+    this.vy = Math.random() * 4;
 
     this.sinValue = Math.random();
   }
@@ -30,10 +30,10 @@ export class GlowParticle {
     }
 
     if (this.y < 0) {
-      this.vy *= -9 / 20;
+      this.vy *= -1;
       this.y += 10;
     } else if (this.y > stageHeight) {
-      this.vy *= -2;
+      this.vy *= -1;
       this.y -= 10;
     }
 

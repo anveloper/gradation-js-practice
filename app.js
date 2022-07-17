@@ -1,17 +1,16 @@
 import { GlowParticle } from './glowpaticle.js';
 
 const COLORS = [
-  { r: 45, g: 74, b: 227 },
-  { r: 250, g: 255, b: 89 },
-  { r: 255, g: 104, b: 218 },
-  { r: 44, g: 209, b: 212 },
-  { r: 54, g: 233, b: 84 },
+  { r: 235, g: 143, b: 144 }, // #EB8F90
+  { r: 255, g: 180, b: 113 }, // #FFB471
+  { r: 173, g: 190, b: 210 }, // #ADBED2
+  { r: 18, g: 64, b: 106 }, // #12406A
 ]
 
 class App {
   constructor() {
     this.canvas = document.createElement('canvas');
-    this.canvas.style.position = 'absolute';
+    this.canvas.style.position = 'fixed';
     this.canvas.style.top = 0;
     this.canvas.style.left = 0;
     this.canvas.style.zIndex = -1;
@@ -21,7 +20,7 @@ class App {
     console.log(this.ctx);
     this.pixelRatio = (window.devicePixelRatio > 1) ? 2 : 1;
 
-    this.totalParticles = 16;
+    this.totalParticles = 12;
     this.particles = [];
     this.maxRadius = 900;
     this.minRadius = 400;
